@@ -1,0 +1,11 @@
+1- Download AVCam Library.
+2- Go to Obj-C code and open it and drag AVCamCameraVC,AVCamPhotoDelegate, AVCamPreview. (Both h and m) files.
+3- Xcode will give an option of bridging header if not create one.
+4- Change the view controller class to ”AVCamCameraViewController”.
+5- Create a view in mainstroryboard, create and iboutlet.
+6- Change the preview view to _previewview.
+7- Put “@property (nonatomic, weak)  AVCamPreviewView *_previewView;” in AVcamCameraVC and remove it from AVCamPreview.
+8- Add “self._previewView = PreviewView” before super.viewDidLoad().
+9- Now run the app.
+
+————————————————————————————————————————————————————————————————————————————————
